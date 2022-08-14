@@ -1,38 +1,66 @@
-.App {
+.heading_two {
   text-align: center;
+  font-size: 54px;
+  font-weight: 500;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button__wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+
+button {
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 50px;
+  background-color: cyan;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button :hover {
+  box-shadow: 10px 10px 10px blue;
+}
+
+button:active {
+  box-shadow: 10px 10px 10px red;
+}
+
+.game_count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: bold;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.game_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: blue;
+}
+
+.center_text {
+  text-align: Center;
+  font-size: 34px;
+}
+
+.win {
+  color: green;
+}
+
+.loss {
+  color: red;
+}
+
+#algoId {
+  text-align: center;
 }
